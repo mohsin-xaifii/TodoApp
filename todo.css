@@ -1,0 +1,136 @@
+body{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #252422;
+    color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100vh;
+}
+body h1{
+    margin-bottom: 6vw;
+    margin-top: 4vw;
+    color: #CCC5B9;
+}
+.input-wrapper{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+#todo-input {
+    width: 30vw;
+    height: 4.5vh;
+    padding: 0.7vw;
+    border-radius: 2vw;
+    border: none;
+    font-size: medium;
+    background-color: #4a4743;
+    outline-style: dashed;
+    outline-color: #4a4743;
+    color: #CCC5B9;
+}
+#todo-date{
+    width: 10vw;
+    height: 4.5vh;
+    cursor: pointer;
+    padding: 0.5vw;
+    border-radius: 2vw;
+    background-color:#FFFCF2;
+    outline: none;
+    border: none;
+}
+#todo-time{
+    width: 10vw;
+    height: 4.5vh;
+    outline: none;
+    padding: 0.5vw;
+    border-radius: 2vw;
+    background-color:#CCC5B9;
+    cursor: pointer;
+    border: none; 
+}
+.add-todo-btn{
+    font-size: medium;
+    width: 12vw;
+    height: 6vh;
+    border-radius: 2vw;
+    background-color:#EB5E28;
+    color:#252422;
+    border: none;
+    cursor: pointer;
+    transition: all ease-in 0.2s;
+}
+
+.todo-body div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #CCC5B9;
+    border: 2px dashed #4a4743;
+    border-radius: 2vw;
+    margin: 1.5vw 0;
+    padding: 0.5vw;
+    height: 6vh;
+}
+.todo-body div button{
+    width: 3vw;
+    height: 100%;
+    border-radius: 2vw;
+    border: none;
+    cursor: pointer;
+    background-color: #252422;
+    border: 2px dashed #CCC5B9;   
+}
+
+@media only screen and (max-width: 600px) {
+    #main{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .input-wrapper{
+        width: 100vw;
+        flex-direction: column;
+        gap: 3vw;
+        
+    }
+
+    #todo-input {
+        width: 80vw;
+    }
+
+    #todo-date{
+        width: 40vw;
+    }
+    #todo-time{
+        width: 40vw;
+    }
+
+    .add-todo-btn{
+        font-size: medium;
+        width: 40vw;
+        height: 5vh;
+    }
+    
+    .todo-body div{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 90vw;
+    }
+    .todo-body div button{
+        border: none; 
+    }
+    body h1{
+        margin-bottom: 12vw;
+    }
+}

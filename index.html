@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="todo.css">
+    <title>Todo App</title>
+</head>
+<body>
+    
+    <h1>Daily Task Manager</h1>
+
+    <div id="main">
+
+        <div class="input-wrapper">
+
+                <input id="todo-input" type="text" placeholder="What Do You Want Todo" required>
+                <input id="todo-date" type="date">
+                <input id="todo-time" type="time">
+                <button class="add-todo-btn" onclick="addTodo()"> Add</button>
+
+        </div>
+
+        <div class="todo-body">
+            <h1 id="error-msg"></h1>
+        </div>
+
+    </div>
+
+
+
+    <script src="todo.js"></script>
+</body>
+</html>
